@@ -1,0 +1,29 @@
+.breadcrumb{
+    padding:8px;
+    margin:0 auto;
+}
+.breadcrumb>li{
+  display:inline;
+
+  
+}
+.breadcrumb  li.location +li.location::before{
+  content:">";
+}
+.breadcrumb >li a:hover{
+ text-decoration: underline;
+ color:gray;
+}
+
+.breadcrumb li.attribute a:hover{
+ color:green;
+  text-decoration: none;
+  margin:10px;
+  font-size:18px;
+}
+.breadcrumb li.attribute::after{
+  content:"X";
+  color:red;
+ 
+  vertical-align:super;
+}
